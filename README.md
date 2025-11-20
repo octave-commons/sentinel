@@ -49,3 +49,53 @@ Scaffold with working watcher wiring, pack loading, and synthetic emission + RPC
 - Nx: `nx/model.cljs`, `nx/runner.cljs`
 - Client: `client/node.cljs`
 - Utilities: `util/io.cljs`
+
+<!-- READMEFLOW:BEGIN -->
+# @promethean-os/sentinel
+
+
+
+[TOC]
+
+
+## Install
+
+```bash
+pnpm -w add -D @promethean-os/sentinel
+```
+
+## Quickstart
+
+```ts
+// usage example
+```
+
+## Commands
+
+- `build`
+- `watch`
+- `test`
+- `clean`
+
+## License
+
+GPL-3.0-only
+
+
+### Package graph
+
+```mermaid
+flowchart LR
+  _promethean_os_sentinel["@promethean-os/sentinel\n0.0.0"]
+  _promethean_os_fs["@promethean-os/fs\n0.0.1"]
+  _promethean_os_logger["@promethean-os/logger\n0.1.0"]
+  _promethean_os_messaging["@promethean-os/messaging\n0.1.0"]
+  _promethean_os_sentinel --> _promethean_os_fs
+  _promethean_os_sentinel --> _promethean_os_logger
+  _promethean_os_sentinel --> _promethean_os_messaging
+  classDef focal fill:#fdf6b2,stroke:#222,stroke-width:2px;
+  class _promethean_os_sentinel focal;
+```
+
+
+<!-- READMEFLOW:END -->
